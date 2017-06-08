@@ -29,9 +29,8 @@ function draw() {
     //image(img, imgX, imgY);
     rect(imgX, imgY, 100, 100);
     noLoop();
-    else if() (gamemode = 2) {
+  } else if (gamemode == 2) {
     backround(244,164,96);
-  }
   }
 }
 
