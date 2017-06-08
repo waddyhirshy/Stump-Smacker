@@ -23,14 +23,15 @@ function draw() {
     background(178,34,34);
     text("smash the stump", 30, 30);
     text(clicks + " Stumps Smacked.", 30, 90);
-    imgX = random(width);
-    imgY = random(height);
+    imgX = random(width - 150);
+    imgY = random(height - 150);
     console.log(imgX + " " + imgY);
     //image(img, imgX, imgY);
     rect(imgX, imgY, 100, 100);
     noLoop();
   } else if (gamemode == 2) {
     background(244,164,96);
+    text("Game Over", 150,170);
     clicks = 0
   }
 }
