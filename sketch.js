@@ -30,7 +30,7 @@ function draw() {
     rect(imgX, imgY, 100, 100);
     noLoop();
   } else if (gamemode == 2) {
-    backround(244,164,96);
+    background(244,164,96);
   }
 }
 
