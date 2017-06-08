@@ -37,23 +37,20 @@ function draw() {
 function keyTyped(){
   console.log("key");
 
-
-  //if gamemode is welcome screen, change gamemode to playing
   if (gamemode == 0) {
     gamemode = 1;
   }
 }
 
-function mouseClicked() {  //check documentation p5.org/reference
+function mouseClicked() {  
 
   if (mouseX > imgX && mouseX < imgX + 100 && mouseY > imgY && mouseY < imgY + 100) {
-console.log("click");
+    console.log("click");
+    clicks = clicks + 1;
     redraw();
   } else {
     gamemode = 2;
-
+    redraw();
   }
 
 }
-
-//TODO: create or login to your account at github.com
