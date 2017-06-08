@@ -43,14 +43,25 @@ function keyTyped(){
 }
 
 function mouseClicked() {  
-
-  if (mouseX > imgX && mouseX < imgX + 100 && mouseY > imgY && mouseY < imgY + 100) {
+  if (gamemode == 0) {
+    gamemode = 1;
+      redraw();
+    
+  } else if (gamemode == 1) {
+    if (mouseX > imgX && mouseX < imgX + 100 && mouseY > imgY && mouseY < imgY + 100) {
     console.log("click");
     clicks = clicks + 1;
-    redraw();
+    redraw();  
   } else {
     gamemode = 2;
     redraw();
   }
+    
+  } else if (gamemode == 2) {
+    gamemode = 0;
+      redraw();
+  }
+  
+ 
 
 }
