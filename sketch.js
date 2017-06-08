@@ -31,6 +31,7 @@ function draw() {
     noLoop();
   } else if (gamemode == 2) {
     background(244,164,96);
+    clicks = 0
   }
 }
 
